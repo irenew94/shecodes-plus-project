@@ -1,98 +1,75 @@
 body {
   background: #f9f7fe;
-  font-family: "Roboto", sans-serif;
 }
-
-a {
-  color: #885df1;
-}
-
-.weather-app {
-  background: white;
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-}
-
 header {
-  border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-
-.search-input {
-  background-color: #f9f7fe;
-  border: none;
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  padding: 20px;
-  width: 75%;
-  border-radius: 6px;
-}
-
-.search-button {
-  margin-left: 5px;
-  font-size: 16px;
-  background-color: #885df1;
-  color: white;
-  border: none;
-  padding: 20px;
-  line-height: 1;
-  border-radius: 5px;
-}
-
-main {
-  padding: 30px 0;
-}
-
-.current-temperature {
-  font-size: 48px;
-}
-
-.current-weather {
-  display: flex;
-  justify-content: space-between;
-}
-
-.current-city {
-  font-size: 38px;
-  font-weight: 900;
-  margin: 0;
-}
-.current-details {
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.current-details strong {
-  color: #f65282;
-}
-
-.current-temperature-icon {
-  position: relative;
-  top: -8px;
+h1 {
   font-size: 40px;
-  margin-right: 10px;
 }
-
-.current-temperature-value {
+footer {
+  text-align: center;
+  margin-top: 25px;
+}
+h1,
+.temperature {
+  font-family: "Oswald", sans-serif;
+}
+p,
+footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.container {
+  border: none;
+  border-radius: 8px;
+  margin: 50px 400px 0;
+  padding: 30px 50px 20px 30px;
+  background: white;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.03);
+}
+.search-bar {
+  background: #f9f7fe;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 75%;
+}
+.search-button {
+  background: #885df1;
+  color: white;
+  border: 1px solid #885df1;
+  border-radius: 5px;
+  padding: 13px;
+  margin-left: 5px;
+}
+.temperature {
+  display: flex;
+  justify-content: right;
+}
+.temperature-icon {
+  position: relative;
+  bottom: 110px;
+  right: 15px;
+  font-size: 45px;
+}
+.temperature-value {
+  position: relative;
+  bottom: 140px;
+  right: 5px;
   font-size: 80px;
   font-weight: bold;
 }
-
-.current-temperature-unit {
-  font-size: 28px;
+.temperature-degrees {
   position: relative;
-  top: -38px;
+  bottom: 120px;
+  font-size: 35px;
 }
 
-footer {
-  border-top: 1px solid #f9f7fe;
-  text-align: center;
-  padding-top: 15px;
-
-  color: rgba(39, 33, 66, 0.4);
+.humidity-wind-data {
+  color: #f65282;
+}
+.current-weather {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
